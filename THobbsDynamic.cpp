@@ -1,13 +1,10 @@
 //						Tyler Hobbs
-//						CSC 413 Algorithms
 //						Dynamic Programming: Rod Cutting
 //						5 April 2018
-//
-//						all algorithms come from our textbook, pages noted
 
 #include<cstdlib>
 #include<iostream>
-#include<algorithm>		//max function
+#include<algorithm>		
 
 using namespace std;
 
@@ -65,8 +62,7 @@ int main(){
 }
 
 int memoizedRodCut(int *prices, int length){
-//	from page 365	
-	
+
 	int rod[11];
 	
 	for(int i=0; i < 11; i++){
@@ -77,7 +73,6 @@ int memoizedRodCut(int *prices, int length){
 }
 
 int memoizedRodCutter(int *prices, int length, int *rod){
-//	from page 366
 	
 	int optimalSoln = -999;
 	
@@ -97,8 +92,7 @@ int memoizedRodCutter(int *prices, int length, int *rod){
 	return optimalSoln;
 }
 
-int bottomUpRodCut(int *prices, int length){
-//	page 366	
+int bottomUpRodCut(int *prices, int length){	
 	
 	int optimalSoln = -999;
 	int rod[11];
